@@ -1,0 +1,59 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Lunar 2 - Eternal Blue Complete"
+id = "SLUS-01071"
+players = 1
+exe = "disc/SLUS_010.71"
+disc = "disc/Lunar 2 - Eternal Blue Complete (USA) (Disc 1).cue"
+discs = ["disc/Lunar 2 - Eternal Blue Complete (USA) (Disc 1).cue", "disc/Lunar 2 - Eternal Blue Complete (USA) (Disc 2).cue", "disc/Lunar 2 - Eternal Blue Complete (USA) (Disc 3).cue"]
+disc_serials = ["SLUS-01071", "SLUS-01239", "SLUS-01240"]
+load_address = "0x80010000"
+entry_pc = "0x80061588"
+text_size = "0x0007B800"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Lunar 2 - Eternal Blue Complete (USA) (Disc 1).bin"
+cue_name = "Lunar 2 - Eternal Blue Complete (USA) (Disc 1).cue"
+boot_exe = "SLUS_010.71"
+known_sizes = [750798384]
+known_md5 = [
+  "dffdac14787cc874e04a443e0df5421a",
+]
+known_sha1 = [
+  "4a6847f2e3f66abac33c897d50fd8dd111b48f89",
+]
+known_crc32 = [
+  "1917cc55",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH1001.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "Lunar 2 - Eternal Blue Complete Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "ab4ec5b7e780a4b0d2f732358c696efbf481565bf449ecf82c51fc030badf058"

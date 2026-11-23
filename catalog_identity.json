@@ -1,0 +1,88 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Lunar 2 - Eternal Blue Complete",
+    "id": "SLUS-01071",
+    "boot_exe": "SLUS_010.71"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Lunar 2 - Eternal Blue Complete (USA) (Disc 1).cue",
+    "bin_name": "Lunar 2 - Eternal Blue Complete (USA) (Disc 1).bin",
+    "track_counts": [
+      1,
+      1,
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 750798384,
+      "md5": "dffdac14787cc874e04a443e0df5421a",
+      "sha1": "4a6847f2e3f66abac33c897d50fd8dd111b48f89",
+      "crc32": "1917cc55"
+    },
+    "disc_fp": "ab4ec5b7e780a4b0d2f732358c696efbf481565bf449ecf82c51fc030badf058",
+    "discs": [
+      {
+        "index": 1,
+        "cue_name": "Lunar 2 - Eternal Blue Complete (USA) (Disc 1).cue",
+        "bin_name": "Lunar 2 - Eternal Blue Complete (USA) (Disc 1).bin",
+        "size": 750798384,
+        "md5": "dffdac14787cc874e04a443e0df5421a",
+        "sha1": "4a6847f2e3f66abac33c897d50fd8dd111b48f89",
+        "crc32": "1917cc55",
+        "track_count": 1,
+        "serial": "SLUS-01071",
+        "disc_fp": "ab4ec5b7e780a4b0d2f732358c696efbf481565bf449ecf82c51fc030badf058"
+      },
+      {
+        "index": 2,
+        "cue_name": "Lunar 2 - Eternal Blue Complete (USA) (Disc 2).cue",
+        "bin_name": "Lunar 2 - Eternal Blue Complete (USA) (Disc 2).bin",
+        "size": 732276384,
+        "md5": "a800a4a1b36b6b6a469d026fc912764c",
+        "sha1": "83c9d39828bfcf4078d45e342a017838289d5ed5",
+        "crc32": "217a8fbd",
+        "track_count": 1,
+        "serial": "SLUS-01239",
+        "disc_fp": "6671926b35949b7db0baf9fa4e79563b883c93b9f9a88448e754146452bdbf48"
+      },
+      {
+        "index": 3,
+        "cue_name": "Lunar 2 - Eternal Blue Complete (USA) (Disc 3).cue",
+        "bin_name": "Lunar 2 - Eternal Blue Complete (USA) (Disc 3).bin",
+        "size": 751242912,
+        "md5": "e65cd19907a91b2c631ccc34113e7b7a",
+        "sha1": "1495d397734245dc7fb7adc7acc41b511c2541e9",
+        "crc32": "9d23a98a",
+        "track_count": 1,
+        "serial": "SLUS-01240",
+        "disc_fp": "53b5e8e67632d8014755ed92777696d19af927e57b21f69cc40ea3f368ac98bb"
+      }
+    ]
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80061588",
+    "text_size": "0x0007B800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 1576,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

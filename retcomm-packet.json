@@ -1,0 +1,116 @@
+{
+  "format_version": 1,
+  "id": "lunar-2-eternal-blue-complete-psx",
+  "name": "Lunar 2 - Eternal Blue Complete",
+  "kind": "recomp",
+  "platform": "psx",
+  "source_repo": "lunar-2-eternal-blue-complete-recomp",
+  "rom_identity": {
+    "crc32": [
+      "1917cc55",
+      "217a8fbd",
+      "9d23a98a"
+    ],
+    "md5": [
+      "dffdac14787cc874e04a443e0df5421a",
+      "a800a4a1b36b6b6a469d026fc912764c",
+      "e65cd19907a91b2c631ccc34113e7b7a"
+    ],
+    "sha1": [
+      "4a6847f2e3f66abac33c897d50fd8dd111b48f89",
+      "83c9d39828bfcf4078d45e342a017838289d5ed5",
+      "1495d397734245dc7fb7adc7acc41b511c2541e9"
+    ],
+    "disc_serials": [
+      "SLUS-01071",
+      "SLUS-01239",
+      "SLUS-01240"
+    ],
+    "sizes": [
+      750798384,
+      732276384,
+      751242912
+    ],
+    "filenames": [
+      "Lunar 2 - Eternal Blue Complete (USA) (Disc 1).cue",
+      "Lunar 2 - Eternal Blue Complete (USA) (Disc 1).bin",
+      "Lunar 2 - Eternal Blue Complete (USA) (Disc 2).cue",
+      "Lunar 2 - Eternal Blue Complete (USA) (Disc 2).bin",
+      "Lunar 2 - Eternal Blue Complete (USA) (Disc 3).cue",
+      "Lunar 2 - Eternal Blue Complete (USA) (Disc 3).bin"
+    ],
+    "track_counts": [
+      1,
+      1,
+      1
+    ],
+    "disc_fps": [
+      "ab4ec5b7e780a4b0d2f732358c696efbf481565bf449ecf82c51fc030badf058",
+      "6671926b35949b7db0baf9fa4e79563b883c93b9f9a88448e754146452bdbf48",
+      "53b5e8e67632d8014755ed92777696d19af927e57b21f69cc40ea3f368ac98bb"
+    ],
+    "require_cue": true
+  },
+  "rom_extensions": [
+    ".cue",
+    ".bin",
+    ".chd"
+  ],
+  "bios_identity": {
+    "required": true,
+    "name": "SCPH1001.BIN",
+    "profile": "SCPH1001",
+    "crc32": [
+      "37157331"
+    ],
+    "md5": [
+      "924e392ed05558ffdb115408c263dccf"
+    ],
+    "sha1": [
+      "10155d8d6e6e832d6ea66db9bc098321fb5e8ebf"
+    ],
+    "sha256": [
+      "71af94d1e47a68c11e8fdb9f8368040601514a42a5a399cda48c7d3bff1e99d3"
+    ],
+    "sizes": [
+      524288
+    ],
+    "filenames": [
+      "SCPH1001.BIN"
+    ]
+  },
+  "release": {
+    "github": "alexbeavs-ps1-ports/lunar-2-eternal-blue-complete-recomp",
+    "allow_prerelease": false,
+    "asset_glob": {
+      "windows-x64": "lunar-2-eternal-blue-complete-*-windows-x64.zip",
+      "linux-x64": "lunar-2-eternal-blue-complete-*-linux-x64.zip",
+      "macos-arm64": "lunar-2-eternal-blue-complete-*-macos-arm64.zip",
+      "macos-x64": "lunar-2-eternal-blue-complete-*-macos-x64.zip"
+    }
+  },
+  "launch": {
+    "windows": "lunar_2_eternal_blue_complete.exe",
+    "linux": "lunar_2_eternal_blue_complete",
+    "macos": "lunar_2_eternal_blue_complete"
+  },
+  "build": {
+    "source": {
+      "github": "alexbeavs-ps1-ports/lunar-2-eternal-blue-complete-recomp",
+      "ref": ""
+    },
+    "toolchain": {
+      "id": "cmake-clang-v1",
+      "min_version": "1.0.14"
+    },
+    "generate": {
+      "engine": "psxrecomp",
+      "config": "game.toml"
+    },
+    "cmake": {
+      "build_dir": "build",
+      "target": "psx-runtime",
+      "config": "Release"
+    }
+  }
+}

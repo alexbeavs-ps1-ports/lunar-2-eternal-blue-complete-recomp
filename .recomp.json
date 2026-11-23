@@ -1,0 +1,13 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Lunar 2 - Eternal Blue Complete",
+  "system": "PS1",
+  "type": "recomp",
+  "toolchain": "psxrecomp",
+  "status": "exploring",
+  "project": "lunar-2-eternal-blue-complete-recomp",
+  "original": {
+    "region": "USA",
+    "serial": "SLUS-01071"
+  }
+}
